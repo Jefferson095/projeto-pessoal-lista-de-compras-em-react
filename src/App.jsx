@@ -9,7 +9,7 @@ function App() {
   const handleInputChange = (e) => {
     setItem(e.target.value);
   };
-
+// Variável para adicionar itens no carrinho
   const handleAddItem = () => {
     if (item.trim()) {
       setItemsList([...itemsList, item]);
@@ -17,11 +17,13 @@ function App() {
     }
   };
 
+  //Variável de remover itens no carrinho
   const handleRemoveItem = (index) => {
     const newItemsList = itemsList.filter((_, i) => i !== index);
     setItemsList(newItemsList);
   };
 
+  //Return para retornar a interface do site
   return (
     <div className="app">
       <h1>Lista de Compras</h1>

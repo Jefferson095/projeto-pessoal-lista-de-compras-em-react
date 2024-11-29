@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import './App.css';
 
+
+//Função principal
 function App() {
   const [item, setItem] = useState('');
   const [itemsList, setItemsList] = useState([]);
